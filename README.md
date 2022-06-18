@@ -1,39 +1,38 @@
-# Simple React JS Project
+# Spotify Clone
 
 ## What is the use of this Repo
 
 This Project is a Simple ReactJS Project which demonstrates the following
-1. Creating a Component in React
-2. Making HTTP calls
-3. Communicating between parent and child component
-4. Using Bootstrap along with React
-5. Using Basic Routing in React
+1. Creating a powerful Spotify mockup
+2. Making fetch requests to the Spotify API using the Spotify Web API Node library
+3. Simple Login functionalities
+4. Using reactstrap along with ReactJS to create a responsive UI.
 
 The project Template can be used to build bigger projects
 
-## Live Application URL
+<!-- ## Live Application URL
 
 ### https://aditya-sridhar.github.io/simple-reactjs-app
-This URL has the application deployed in
+This URL has the application deployed in -->
 
-## Prerequisites
+## Features
 
-### Install Node JS
-Refer to https://nodejs.org/en/ to install nodejs
+### Search Songs and Artists
+Search songs and artists based on your preferrence.
 
-### Install create-react-app
-Install create-react-app npm package globally. This will help to easily run the project and also build the source files easily. Use the following command to install create-react-app
+### Lyrics 
+Shows the live lyrics along with the current song playing using the same Spotify Web API Node as Spotify doesn't let third party apps to access their internal lyrics.
 
 ```bash
-npm install -g create-react-app
+Spotify-web-api-node
 ```
-## Live Application URL
+<!-- ## Live Application URL
 
 The Application is deployed in https://aditya-sridhar.github.io/simple-reactjs-app
 
-Click on the link to see the application
+Click on the link to see the application -->
 
-## Cloning and Running the Application in local
+<!-- ## Cloning and Running the Application in local
 
 Clone the project into local
 
@@ -74,4 +73,4 @@ https://github.com/facebook/create-react-app
 
 **ReactJS** : Refer to https://reactjs.org/ to understand the concepts of ReactJS
 
-**React Bootstrap** : Refer to https://react-bootstrap.github.io/getting-started/introduction/ to understand how to use React Bootstrap
+**React Bootstrap** : Refer to https://react-bootstrap.github.io/getting-started/introduction/ to understand how to use React Bootstrap -->

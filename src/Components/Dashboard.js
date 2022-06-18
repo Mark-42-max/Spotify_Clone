@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import useAuth from "../useAuth";
 import { Container, Input } from "reactstrap";
+import SpotifyWebApi from "spotify-web-api-node"
 
 const Dashboard = ({ code }) => {
   const accessToken = useAuth(code);
