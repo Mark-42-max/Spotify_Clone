@@ -58,6 +58,7 @@ const Dashboard = ({ code }) => {
 
   const getUri = (result)=> {
     setPlayingSong(result);
+    setSearch("");
   }
 
   return (
@@ -79,7 +80,7 @@ const Dashboard = ({ code }) => {
         : null}
         
       </div>
-      <div><Player accessToken={accessToken ? accessToken : null} url={playingSong && playingSong.uri}/></div>
+      <div><Player accessToken={accessToken && accessToken} url={playingSong && playingSong.uri}/></div>
 
     </Container>
   )

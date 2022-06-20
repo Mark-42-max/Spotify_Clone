@@ -9,7 +9,7 @@ const useAuth = code => {
   useEffect(() => {
     axios({
       method: "post",
-      url: "http://localhost:3002/login",
+      url: "https://spotify-backend2001.herokuapp.com/login",
       data: {
         code: code
       }
@@ -20,8 +20,9 @@ const useAuth = code => {
         setExpiresIn(res.data.expiresIn);
         window.history.pushState({}, null, "/");
       })
-      .catch(() => {
-        window.location.href = "/";
+      .catch((err) => {
+        //window.location.href = "/";
+        console.error(err);
       });
   }, [code]);
 
@@ -29,15 +30,16 @@ const useAuth = code => {
     if (!refreshToken || !expiresIn ) return;
     const interval = setInterval(() => {
       axios
-        .post("http://localhost:3002/refresh", {
+        .post("https://spotify-backend2001.herokuapp.com/refresh", {
           refreshToken,
         })
         .then(res => {
           setAccessToken(res.data.accessToken)
           setExpiresIn(res.data.expiresIn)
         })
-        .catch(() => {
-          window.location = "/"
+        .catch((err) => {
+          //window.location = "/"
+          console.error(err);
         })
     }, (expiresIn - 60) * 1000)
 
