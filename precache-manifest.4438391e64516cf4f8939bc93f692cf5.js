@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/Spotify_Clone/static/js/runtime~main.abeb4e66.js"
   },
   {
-    "revision": "362498b04fb8149f2e7e94ed69c8c48f",
+    "revision": "01f4ec02401192988e319b3127b7d9d8",
     "url": "/Spotify_Clone/index.html"
   }
 ];
